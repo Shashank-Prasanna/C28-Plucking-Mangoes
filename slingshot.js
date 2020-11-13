@@ -21,6 +21,10 @@ class Slingshot {
 		this.slingshot.pointA = null;
 	}
 
+	attach(body) {
+		this.slingshot.pointA = {x: 140, y: 525};
+	}
+
 	display() {
 		if (this.slingshot.pointA != null) {
 			strokeWeight(5);

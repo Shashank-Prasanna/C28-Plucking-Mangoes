@@ -91,3 +91,10 @@ function draw() {
 
 	drawSprites();
 }
+
+function keyPressed() {
+	if (keyCode === 32) {
+		Matter.Body.setPosition(stone.body, {x: 140, y: 525});
+		slingshot.attach(stone.body);
+	}
+}
